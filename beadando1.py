@@ -5,7 +5,7 @@ Created on Wed May  1 13:07:07 2019
 @author: SzekelyLegio
 """
 import numpy as np
-
+print("--------------------------------Első feladat-----------------------------------------")
 def islowertriangular(M): 
     for i in range(0, len(M)): 
         for j in range(i + 1, len(M)): 
@@ -57,8 +57,8 @@ a = 1230
 b= 1530
   
 # prints 12 
-print ("The gcd of 60 and 48 is : ",end="") 
-print (computeGCD(1230,1530)) 
+
+print (computeGCD(1230345,1530345)) 
 
 
 
@@ -70,15 +70,7 @@ class Validator(object):
     def __init__(self, email):
         self.email = email
         
-    def checkCaracters(self):
-        a = ['_','-',',','.','@']
-        myEmail= self.email
-        
-        for i in range(len(myEmail)):
-            if(myEmail[i].isalpha() == False and myEmail[i].isdigit()==False and myEmail.find(a[0])== -1 and myEmail.find(a[0])== -1 and myEmail.find(a[2])== -1 and myEmail.find(a[3])== -1 and myEmail.find(a[4])== -1):
-                return False
-            else:
-                return True
+    
             
  
     def checkCharacter(self):
